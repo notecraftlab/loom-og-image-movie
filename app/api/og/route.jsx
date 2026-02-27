@@ -150,7 +150,7 @@ const filmFrameColor = '#000000';
           display: 'flex', 
           flexDirection: 'column', 
           alignItems: 'center', 
-          marginBottom: 20, 
+          marginBottom: 40, 
           position: 'relative' // Necesario para que el glow absoluto se posicione respecto a este grupo
         }}>
          
@@ -171,7 +171,7 @@ const filmFrameColor = '#000000';
 			{/* 3. LOOM (Limpio, justo debajo de la línea) */}
           <div
             style={{
-          marginTop: -15, // Ajuste sutil de posición
+          marginTop: -25, // Ajuste sutil de posición
           display: "flex",
           letterSpacing: 15, // Aumentado de 10 a 15 para ensanchar
           fontSize: 32, // Ligeramente más grande
@@ -198,7 +198,7 @@ const filmFrameColor = '#000000';
           color: "rgba(255,255,255,0.98)", // Casi blanco puro
           // Efecto de relieve sutil para dar más grosor percibido
           textShadow: `0 0 2px rgba(255,255,255,0.4), 0 0 15px rgba(255,255,255,0.2)`, 
-          paddingTop: 10,
+          paddingTop: 30,
           paddingBottom: 15, // Espacio extra abajo
         }}
           >
@@ -208,7 +208,7 @@ const filmFrameColor = '#000000';
           {/* rating */}
           <div
             style={{
-              marginTop: 22,
+              marginTop: 25,
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -255,7 +255,7 @@ const filmFrameColor = '#000000';
           {/* creator + platform */}
           <div
             style={{
-              marginTop: 18,
+              marginTop: 35,
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -274,7 +274,7 @@ const filmFrameColor = '#000000';
             style={{
               width: 760,
               height: 2,
-              marginTop: 24,
+              marginTop: 26,
               display: "flex",
               borderRadius: 999,
               background: `linear-gradient(90deg, rgba(${r},${g},${b},0) 0%, rgba(${r},${g},${b},0.30) 30%, rgba(${r},${g},${b},0.55) 50%, rgba(${r},${g},${b},0.30) 70%, rgba(${r},${g},${b},0) 100%)`,
@@ -292,7 +292,7 @@ const filmFrameColor = '#000000';
               flexWrap: "wrap",
               justifyContent: "center",
               alignItems: "center",
-              fontSize: 20,
+              fontSize: 18,
             }}
           >
             <Chip label={genreLabel} r={r} g={g} b={b} />
