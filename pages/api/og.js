@@ -1,4 +1,4 @@
-import { ImageResponse } from '@vercel/og';
+const { ImageResponse } = require('@vercel/og');
 
 export const config = {
   runtime: 'edge',
@@ -8,8 +8,7 @@ export default function handler(req) {
   try {
     const { searchParams } = new URL(req.url);
 
-    // Definimos qué datos queremos recibir de Webflow
-    const title = searchParams.get('title') || 'Mi Gran Idea';
+    const title = searchParams.get('title') || 'Notecraft Lab';
     const image = searchParams.get('image') || 'https://via.placeholder.com/1080';
 
     return new ImageResponse(
