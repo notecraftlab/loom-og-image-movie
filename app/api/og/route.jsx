@@ -1,12 +1,10 @@
 import { ImageResponse } from '@vercel/og';
 
-export const config = {
-  runtime: 'edge',
-};
+export const runtime = 'edge';
 
-export default function handler(req) {
+export async function GET(request) {
   try {
-    const { searchParams } = new URL(req.url);
+    const { searchParams } = new URL(request.url);
 
     const title = searchParams.get('title') || 'Notecraft Lab';
     const image = searchParams.get('image') || 'https://via.placeholder.com/1080';
@@ -54,8 +52,6 @@ export default function handler(req) {
       }
     );
   } catch (e) {
-    return new Response(`Failed to generate the image`, {
-      status: 500,
-    });
+    return new Response(`Failed to generate the image`, { status: 500 });
   }
 }
