@@ -168,20 +168,23 @@ const filmFrameColor = '#000000';
 		  
         </div>
 		
-			{/* 3. LOOM (Limpio, justo debajo de la línea) */}
-          <div
-            style={{
-          marginTop: -25, // Ajuste sutil de posición
-          display: "flex",
-          letterSpacing: 15, // Aumentado de 10 a 15 para ensanchar
-          fontSize: 32, // Ligeramente más grande
-          fontWeight: 800, // PESO EXTRA BOLD (Heavy)
-          color: "rgba(255,255,255,0.9)", // Un poco más brillante
-          textTransform: "uppercase",
-        }}
-          >
-            LOOM
-          </div>
+{/* 3. LOGOTIPO LOOM - COLORES OFICIALES */}
+<div
+  style={{
+    marginTop: -25, 
+    display: "flex",
+    fontSize: 40, 
+    fontWeight: 800, 
+    fontFamily: 'Manrope, ui-sans-serif, sans-serif',
+    textTransform: "uppercase",
+    letterSpacing: 12,
+  }}
+>
+  <span style={{ color: "#E9EDF5" }}>L</span>
+  <span style={{ color: "#E9EDF5" }}>O</span>
+  <span style={{ color: "#1C8ED6" }}>O</span>
+  <span style={{ color: "#E9EDF5" }}>M</span>
+</div>
 			
           {/* Title */}
           <div
