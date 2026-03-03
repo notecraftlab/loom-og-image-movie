@@ -14,7 +14,7 @@ export async function GET(req) {
     const duration = (searchParams.get("duration") || "").trim();
 
     const GENRE_HEX = {
-      science-fiction: "#00B7FF",
+      "science-fiction": "#00B7FF",
       action: "#FF3B30",
       fantasy: "#4F52DE",
       horror: "#00C853",
@@ -350,7 +350,7 @@ function clamp(str, max) {
 
 function prettifyGenre(g) {
   const map = {
-    science-fiction: "Ciencia Ficción",
+    "science-fiction": "Ciencia Ficción",
     action: "Acción",
     fantasy: "Fantasía",
     horror: "Terror",
