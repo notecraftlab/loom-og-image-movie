@@ -10,11 +10,11 @@ export async function GET(req) {
     const rating = (searchParams.get("rating") || "—").trim();
     const creator = (searchParams.get("creator") || "Unknown").trim();
     const platform = (searchParams.get("platform") || "YouTube").trim();
-    const genre = (searchParams.get("genre") || "scifi").trim().toLowerCase();
+    const genre = (searchParams.get("genre") || "science-fiction").trim().toLowerCase();
     const duration = (searchParams.get("duration") || "").trim();
 
     const GENRE_HEX = {
-      scifi: "#00B7FF",
+      science-fiction: "#00B7FF",
       action: "#FF3B30",
       fantasy: "#4F52DE",
       horror: "#00C853",
@@ -350,7 +350,7 @@ function clamp(str, max) {
 
 function prettifyGenre(g) {
   const map = {
-    scifi: "Ciencia Ficción",
+    science-fiction: "Ciencia Ficción",
     action: "Acción",
     fantasy: "Fantasía",
     horror: "Terror",
