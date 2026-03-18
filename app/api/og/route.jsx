@@ -171,20 +171,71 @@ const filmFrameColor = '#000000';
 {/* 3. LOGOTIPO LOOM - COLORES OFICIALES */}
 <div
   style={{
-    marginTop: -25, 
+    marginTop: -25,
     display: "flex",
-    fontSize: 40, 
-    fontWeight: 800, 
-    fontFamily: 'Manrope, ui-sans-serif, sans-serif',
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "Manrope, ui-sans-serif, sans-serif",
     textTransform: "uppercase",
-    letterSpacing: 12,
   }}
 >
-  <span style={{ color: "#E9EDF5" }}>L</span>
-  <span style={{ color: "#E9EDF5" }}>O</span>
-  <span style={{ color: "#1C8ED6" }}>O</span>
-  <span style={{ color: "#E9EDF5" }}>M</span>
+  {/* LOOM */}
+  <span
+    style={{
+      fontSize: 35,
+      fontWeight: 800,
+      letterSpacing: 12,
+      color: "#E9EDF5",
+    }}
+  >
+    L
+  </span>
+  <span
+    style={{
+      fontSize: 35,
+      fontWeight: 800,
+      letterSpacing: 12,
+      color: "#E9EDF5",
+    }}
+  >
+    O
+  </span>
+  <span
+    style={{
+      fontSize: 35,
+      fontWeight: 800,
+      letterSpacing: 12,
+      color: "#1C8ED6", // O azul oficial
+    }}
+  >
+    O
+  </span>
+  <span
+    style={{
+      fontSize: 35,
+      fontWeight: 800,
+      letterSpacing: 12,
+      color: "#E9EDF5",
+    }}
+  >
+    M
+  </span>
+
+  {/* RECOMIENDA */}
+  <span
+    style={{
+      marginLeft: 16,
+      fontSize: 35,
+      fontWeight: 600,
+      letterSpacing: 4,
+      color: "#E9EDF5",
+      opacity: 0.85,
+    }}
+  >
+    RECOMIENDA
+  </span>
 </div>
+
 			
           {/* Title */}
           <div
